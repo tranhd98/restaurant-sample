@@ -1,8 +1,208 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+body{
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+/* nav section */
+.navbar-firstpage{
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0,0,0,.2)!important;
+}
+.navbar{
+  height: 10%;
+  width: 100%;
+  padding: 0;
+
+}
+#iconPho{
+  width: 40%;
+  height: 30%;
+  margin-left: 7rem;
+}
+.nav-name{
+  color: rgba(255,255,255,3)!important;
+  font-size: 1.2rem;
+  margin-right: 5rem;
+  font-weight: bold;
+}
+
+.navbar-brand{
+  width: 20%;
+}
+/* picture */
+
+.parallax-picture{
+  background-image: url('../images/main.jpg');
+  min-height: 50rem;
+}
+
+
+.parallax-picture, .parallax-picture2, .parallax-picture3{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container1{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+}
+.container1 #Pho{
+  display: flex;
+  margin: auto;
+  text-align: center;
+  font-weight: 800;
+  font-size: 5rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type 2s linear forwards;
+
+}
+@keyframes type{
+  0% {width: 0%;}
+  to{width: 100%;}
+}
+
+.container1 #quote{
+  font-family: 'Lobster Two', cursive;
+  font-size: 2rem;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type-quote 2s linear forwards 2s;
+  visibility: hidden;
+}
+@keyframes type-quote {
+  from{width: 0;}
+  to{width: 37%;visibility: visible;}
+}
+.container-fluid{
+  padding-top: 5%;
+  text-align: center;
+}
+
+/* Second section */
+.blur-picture{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  filter: grayscale(80%);
+  transition: 1s linear;
+}
+.blur-picture:hover{
+  filter: grayscale(0%);
+}
+.fixed-content{
+  padding-top: 0;
+}
+.main-title{
+  font-family: 'Lobster Two', cursive;
+  padding-top: 20%;
+}
+.col-lg-6{
+  padding: 0;
+}
+.text-main{
+  margin: 0 10% 0 10%;
+}
+.image-galary{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background-position: center;
+  cursor: zoom-in;
+}
+.image-nomargin{
+  padding: 0;
+}
+.image-galary:hover{
+  transform: scale(0.8);
+  overflow: hidden;
+}
+
+.parallax-picture2{
+  background-color:#212529;
+  min-height: 15rem;
+}
+.footer{
+  text-align: center;
+  color: #fff;
+}
+.subcribe-box{
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  border-bottom: 2px solid white;
+  width: 60%;
+  margin: 3%;
+  outline: #212529;
+}
+.subcribe-box:active{
+  background-color: black;
+  border: none;
+}
+#sub-word{
+  padding-top: 2%;
+}
+.iconFinal{
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.copy-right{
+  margin: 0;
+}
+
+
+/* menu */
+.title{
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: 'Lobster Two', cursive;
+  color: #d23433;
+}
+.parallax-picture3{
+  background-image: url('../images/Hero-Image-1.jpg');
+  min-height: 50rem;
+}
+
+/* reservation */
+.reservation-table{
+  margin: 1.5rem auto 1.5rem auto;
+  font-size: 3rem;
+  font-family: 'Lobster Two', cursive;
+  letter-spacing: 0.5rem;
+}
+.choose-option{
+  width: 20%;
+  display: inline-block;
+}
+.reservation-button{
+  margin-bottom: 0.5rem;
+}
+.agreement{
+  text-align: center;
+}
+
+/* location */
+.card-img-top{
+  width: 100%;
+  height: 15rem;
+}
+.block{
+  position: relative;
+}
+.fixed-location{
+  position: absolute;
+  left: 20%;
 }
